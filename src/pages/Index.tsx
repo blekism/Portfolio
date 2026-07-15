@@ -85,7 +85,6 @@ function Hero() {
     <section id="about" className="relative pt-32 pb-20 overflow-hidden">
       <div className="absolute inset-0 bg-grid opacity-40 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_30%,black,transparent)]" />
       <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-10 lg:gap-14 items-center relative">
-        <div className="border border-primary p-4">hehe carl</div>
         <Reveal>
           <SectionLabel>About me</SectionLabel>
           <h1 className="mt-5 font-display text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05]">
