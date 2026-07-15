@@ -1,12 +1,12 @@
 import project1 from "../assets/project-1.jpg";
 import project2 from "../assets/project-2.jpg";
-import project3 from "../assets/project-3.jpg";
-import project4 from "../assets/project-4.jpg";
+// import project3 from "../assets/project-3.jpg";
+// import project4 from "../assets/project-4.jpg";
 import shot1 from "../assets/project-1-shot-1.jpg";
 import shot2 from "../assets/project-1-shot-2.jpg";
 import cert1 from "../assets/cert-1.png";
 import cert2 from "../assets/cert-2.png";
-import cert3 from "../assets/cert-3.png";
+// import cert3 from "../assets/cert-3.png";
 
 export type Review = {
   name: string;
