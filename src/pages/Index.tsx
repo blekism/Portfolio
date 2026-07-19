@@ -24,6 +24,7 @@ import {
 } from "../lib/portfolio-data";
 import { Reveal } from "../services/reveal";
 import { CountStat } from "../services/countstat";
+import { GitHubCalendar } from "react-github-calendar";
 
 const serviceIcons = { Globe, Smartphone } as const;
 
@@ -119,13 +120,37 @@ function Hero() {
       </div>
 
       <div className="mx-auto max-w-6xl px-6 relative mt-16">
-        <Reveal>
+        <Reveal className="mb-18">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 border-t border-border/60 pt-10">
             {stats.map((s) => (
               <CountStat key={s.label} value={s.value} label={s.label} />
             ))}
           </div>
         </Reveal>
+
+        <GitHubCalendar
+          username="blekism"
+          colorScheme="dark"
+          blockSize={15}
+          blockMargin={4}
+          theme={{
+            light: [
+              "oklch(0.95 0.02 25)",
+              "oklch(0.86 0.07 25)",
+              "oklch(0.78 0.12 25)",
+              "oklch(0.70 0.18 25)",
+              "oklch(0.63 0.24 25)",
+            ],
+            dark: [
+              "oklch(0.22 0.03 25)",
+              "oklch(0.34 0.09 25)",
+              "oklch(0.46 0.15 25)",
+              "oklch(0.56 0.20 25)",
+              "oklch(0.63 0.24 25)",
+            ],
+          }}
+          fontSize={14}
+        />
       </div>
     </section>
   );

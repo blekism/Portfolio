@@ -89,26 +89,7 @@ export const projects: Project[] = [
         "National University Dasmarina's very own Student Publication",
       url: "https://www.facebook.com/NUDNUntium/",
     },
-    reviews: [
-      // {
-      //   name: "Priya R.",
-      //   handle: "Engineering Lead",
-      //   body: "Replaced three tools for our team. The focus mode alone is worth it.",
-      //   rating: 5,
-      // },
-      // {
-      //   name: "Marcus T.",
-      //   handle: "Founder",
-      //   body: "Fast, opinionated, and keyboard-friendly. Exactly what we needed.",
-      //   rating: 5,
-      // },
-      // {
-      //   name: "Elena V.",
-      //   handle: "PM",
-      //   body: "The 'blocked' view changed how our standups run.",
-      //   rating: 4,
-      // },
-    ],
+    reviews: [],
   },
   {
     slug: "arpeps",
@@ -142,132 +123,69 @@ export const projects: Project[] = [
     liveDemoEmbed: "https://example.com",
     liveUrl: "https://example.com",
     repoUrl: "https://github.com/blekism/Arpeps",
-    reviews: [
-      // {
-      //   name: "Jordan S.",
-      //   handle: "Head of Growth",
-      //   body: "Finally analytics we can actually act on in real time.",
-      //   rating: 5,
-      // },
-    ],
-  },
-  {
-    slug: "goober-academy",
-    title: "Goober Academy - SIS",
-    tagline:
-      "A tool for students to analyze and visualize their research paper's concepts. It's goal is to help you see where the holes are in your paper, fix it, and produce an overall better paper",
-    category: "AI Tool",
-    year: "2026",
-    logo: arpeps,
-    problem:
-      "Existing analytics tools showed yesterday's data tomorrow. Operators needed a live read on what users were doing right now.",
-    solution:
-      "An event pipeline that streams from browser to dashboard in under two seconds, with anomaly detection and alerts.",
-    techStack: ["Next.js", "ClickHouse", "Kafka", "Go", "Redis"],
-    role: "Full-stack engineer — built the ingestion pipeline and the live dashboard.",
-    challenges: [
-      "Backpressure on the event pipeline during traffic spikes.",
-      "Sub-second queries on a billion rows.",
-    ],
-    screenshots: [
-      { src: shot5, alt: "Pulse dashboard" },
-      { src: shot6, alt: "Pulse mobile" },
-      { src: shot7, alt: "Pulse mobile" },
-      { src: shot8, alt: "Pulse mobile" },
-    ],
-    liveDemoEmbed: "https://example.com",
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com/blekism/Arpeps",
-    reviews: [
-      // {
-      //   name: "Jordan S.",
-      //   handle: "Head of Growth",
-      //   body: "Finally analytics we can actually act on in real time.",
-      //   rating: 5,
-      // },
-    ],
-  },
-  {
-    slug: "buslink",
-    title: "Buslink",
-    tagline:
-      "A tool for students to analyze and visualize their research paper's concepts. It's goal is to help you see where the holes are in your paper, fix it, and produce an overall better paper",
-    category: "AI Tool",
-    year: "2026",
-    logo: arpeps,
-    problem:
-      "Existing analytics tools showed yesterday's data tomorrow. Operators needed a live read on what users were doing right now.",
-    solution:
-      "An event pipeline that streams from browser to dashboard in under two seconds, with anomaly detection and alerts.",
-    techStack: ["Next.js", "ClickHouse", "Kafka", "Go", "Redis"],
-    role: "Full-stack engineer — built the ingestion pipeline and the live dashboard.",
-    challenges: [
-      "Backpressure on the event pipeline during traffic spikes.",
-      "Sub-second queries on a billion rows.",
-    ],
-    screenshots: [
-      { src: shot5, alt: "Pulse dashboard" },
-      { src: shot6, alt: "Pulse mobile" },
-      { src: shot7, alt: "Pulse mobile" },
-      { src: shot8, alt: "Pulse mobile" },
-    ],
-    liveDemoEmbed: "https://example.com",
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com/blekism/Arpeps",
-    reviews: [
-      // {
-      //   name: "Jordan S.",
-      //   handle: "Head of Growth",
-      //   body: "Finally analytics we can actually act on in real time.",
-      //   rating: 5,
-      // },
-    ],
+    reviews: [],
   },
   // {
-  //   slug: "shoply",
-  //   title: "Shoply",
+  //   slug: "goober-academy",
+  //   title: "Goober Academy - SIS",
   //   tagline:
-  //     "Headless commerce for indie brands. A storefront kit with a hosted admin, instant checkout, and a plugin marketplace built for makers who outgrew rigid platforms.",
-  //   category: "E-commerce",
-  //   year: "2024",
-  //   logo: project3,
+  //     "A tool for students to analyze and visualize their research paper's concepts. It's goal is to help you see where the holes are in your paper, fix it, and produce an overall better paper",
+  //   category: "AI Tool",
+  //   year: "2026",
+  //   logo: arpeps,
   //   problem:
-  //     "Indie merchants were stuck choosing between rigid platforms and DIY stacks they couldn't maintain.",
+  //     "Existing analytics tools showed yesterday's data tomorrow. Operators needed a live read on what users were doing right now.",
   //   solution:
-  //     "A headless storefront kit with a hosted admin, instant checkout, and a plugin marketplace.",
-  //   techStack: ["Remix", "Stripe", "Postgres", "Edge Functions"],
-  //   role: "Founding engineer — architecture, storefront kit, and developer experience.",
+  //     "An event pipeline that streams from browser to dashboard in under two seconds, with anomaly detection and alerts.",
+  //   techStack: ["Next.js", "ClickHouse", "Kafka", "Go", "Redis"],
+  //   role: "Full-stack engineer — built the ingestion pipeline and the live dashboard.",
   //   challenges: [
-  //     "Sub-200ms checkout TTFB globally.",
-  //     "Sandboxed plugins so third-party code can't read other tenants' data.",
+  //     "Backpressure on the event pipeline during traffic spikes.",
+  //     "Sub-second queries on a billion rows.",
   //   ],
-  //   screenshots: [{ src: shot1, alt: "Shoply storefront" }],
+  //   screenshots: [
+  //     { src: shot5, alt: "Pulse dashboard" },
+  //     { src: shot6, alt: "Pulse mobile" },
+  //     { src: shot7, alt: "Pulse mobile" },
+  //     { src: shot8, alt: "Pulse mobile" },
+  //   ],
   //   liveDemoEmbed: "https://example.com",
   //   liveUrl: "https://example.com",
-  //   repoUrl: "https://github.com/example/shoply",
+  //   repoUrl: "https://github.com/blekism/Arpeps",
+  //   reviews: [
+
+  //   ],
   // },
   // {
-  //   slug: "fittrack",
-  //   title: "FitTrack",
+  //   slug: "buslink",
+  //   title: "Buslink",
   //   tagline:
-  //     "A mobile companion for serious lifters. Plans, logs, and visualizes training cycles with progressive overload, deload weeks, and instant rest timers.",
-  //   category: "Mobile / Fitness",
-  //   year: "2023",
-  //   logo: project4,
+  //     "A tool for students to analyze and visualize their research paper's concepts. It's goal is to help you see where the holes are in your paper, fix it, and produce an overall better paper",
+  //   category: "AI Tool",
+  //   year: "2026",
+  //   logo: arpeps,
   //   problem:
-  //     "Most fitness apps treat workouts as checklists. Serious lifters need progressive overload, deload weeks, and instant rest timers.",
+  //     "Existing analytics tools showed yesterday's data tomorrow. Operators needed a live read on what users were doing right now.",
   //   solution:
-  //     "A native mobile app that plans, logs, and visualizes training cycles, with Apple Health and HealthConnect sync.",
-  //   techStack: ["React Native", "Expo", "SQLite", "Reanimated"],
-  //   role: "Solo developer — design, native modules, and App Store launch.",
+  //     "An event pipeline that streams from browser to dashboard in under two seconds, with anomaly detection and alerts.",
+  //   techStack: ["Next.js", "ClickHouse", "Kafka", "Go", "Redis"],
+  //   role: "Full-stack engineer — built the ingestion pipeline and the live dashboard.",
   //   challenges: [
-  //     "Offline-first sync with conflict resolution across devices.",
-  //     "Smooth 60fps charts on five-year-old phones.",
+  //     "Backpressure on the event pipeline during traffic spikes.",
+  //     "Sub-second queries on a billion rows.",
   //   ],
-  //   screenshots: [{ src: shot2, alt: "FitTrack workout screen" }],
+  //   screenshots: [
+  //     { src: shot5, alt: "Pulse dashboard" },
+  //     { src: shot6, alt: "Pulse mobile" },
+  //     { src: shot7, alt: "Pulse mobile" },
+  //     { src: shot8, alt: "Pulse mobile" },
+  //   ],
   //   liveDemoEmbed: "https://example.com",
   //   liveUrl: "https://example.com",
-  //   repoUrl: "https://github.com/example/fittrack",
+  //   repoUrl: "https://github.com/blekism/Arpeps",
+  //   reviews: [
+
+  //   ],
   // },
 ];
 
