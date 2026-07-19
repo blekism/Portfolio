@@ -8,6 +8,7 @@ import {
   Building2,
   MessageSquare,
   Star,
+  ArrowUpRight,
 } from "lucide-react";
 import { projects } from "../lib/portfolio-data";
 import { Reveal } from "../services/reveal";
@@ -150,6 +151,62 @@ export default function ProjectDetail() {
         </Reveal>
       </section>
 
+      <div className="mx-auto max-w-6xl px-6 pt-10 pb-20">
+        <div className="mt-20 grid md:grid-cols-2 gap-x-12 gap-y-12">
+          <DetailBlock label="Problem" body={project.problem} />
+          <DetailBlock label="Solution" body={project.solution} />
+          <DetailBlock label="My Role" body={project.role} />
+          <div>
+            <Label>Challenges</Label>
+            <ul className="mt-3 space-y-2.5">
+              {project.challenges.map((c) => (
+                <li
+                  key={c}
+                  className="flex gap-3 text-muted-foreground leading-relaxed"
+                >
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-pink shrink-0" />{" "}
+                  {c}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {project.liveDemoEmbed && (
+          <Reveal>
+            <div className="mt-8">
+              <div className="flex items-center justify-between">
+                <Label>Live demo</Label>
+                <a
+                  href={project.liveDemoEmbed}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm text-muted-foreground hover:text-foreground inline-flex items-center gap-1"
+                >
+                  Open in new tab <ArrowUpRight className="h-3.5 w-3.5" />
+                </a>
+              </div>
+              <div className="mt-4 rounded-2xl border border-border bg-surface/60 overflow-hidden">
+                <div className="flex items-center gap-1.5 px-4 py-2.5 border-b border-border bg-surface-elevated/40">
+                  <span className="h-2.5 w-2.5 rounded-full bg-destructive/60" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/60" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/60" />
+                  <span className="ml-3 text-xs font-mono text-muted-foreground truncate">
+                    {project.liveDemoEmbed}
+                  </span>
+                </div>
+                <iframe
+                  src={project.liveDemoEmbed}
+                  title={`${project.title} live demo`}
+                  loading="lazy"
+                  className="w-full aspect-video bg-background"
+                />
+              </div>
+            </div>
+          </Reveal>
+        )}
+      </div>
+
       {/* User Reviews */}
       {project.reviews && project.reviews.length > 0 && (
         <section className="mx-auto max-w-6xl px-6 mt-16">
@@ -195,5 +252,22 @@ export default function ProjectDetail() {
         </section>
       )}
     </main>
+  );
+}
+
+function Label({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-pink">
+      <span className="h-px w-6 bg-pink" /> {children}
+    </div>
+  );
+}
+
+function DetailBlock({ label, body }: { label: string; body: string }) {
+  return (
+    <div>
+      <Label>{label}</Label>
+      <p className="mt-3 text-muted-foreground leading-relaxed">{body}</p>
+    </div>
   );
 }

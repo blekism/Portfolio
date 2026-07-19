@@ -35,7 +35,7 @@ function Nav() {
           to="/"
           className="font-display font-semibold text-lg tracking-tight"
         >
-          alex<span className="text-gradient-primary">.</span>dev
+          Blek<span className="text-gradient-primary">.</span>dev
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#about" className="hover:text-foreground transition-colors">
@@ -142,7 +142,7 @@ function ProfileFrame() {
           <div className="relative rounded-[calc(2rem-1.5px)] overflow-hidden bg-surface noise">
             <img
               src={profileImg}
-              alt="Portrait of Alex Morgan"
+              alt="Portrait of Blake"
               width={520}
               height={620}
               className="block w-[280px] sm:w-[340px] md:w-[380px] h-auto object-cover"
@@ -304,7 +304,7 @@ function Experience() {
         <Reveal>
           <SectionLabel>Experience</SectionLabel>
           <h2 className="mt-5 font-display text-4xl md:text-5xl font-semibold">
-            Where I've <span className="text-gradient-primary">shipped</span>.
+            Where I've <span className="text-gradient-primary">worked</span>.
           </h2>
           <p className="mt-5 text-muted-foreground">
             A timeline of full-time roles and internships, in reverse
