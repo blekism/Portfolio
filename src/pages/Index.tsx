@@ -25,6 +25,7 @@ import {
 import { Reveal } from "../services/reveal";
 import { CountStat } from "../services/countstat";
 import { GitHubCalendar } from "react-github-calendar";
+import resume from "../assets/Laviano-Resume-SE.pdf";
 
 const serviceIcons = { Globe, Smartphone } as const;
 
@@ -99,8 +100,8 @@ function Hero() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href="/cv.pdf"
-              download
+              href={resume}
+              download="Laviano-Resume-SE.pdf"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90 transition-opacity"
             >
               <Download className="size-4" /> Download CV
@@ -486,7 +487,7 @@ function Footer() {
     <footer className="border-t border-border/60 py-10">
       <div className="mx-auto max-w-6xl px-6 flex flex-wrap items-center justify-between gap-3 text-sm text-muted-foreground">
         <div>
-          © {new Date().getFullYear()} Alex Morgan. All rights reserved.
+          © {new Date().getFullYear()} Blake Laviano. All rights reserved.
         </div>
         <div className="font-mono text-xs">Built with React · React Router</div>
       </div>
